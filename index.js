@@ -1,3 +1,6 @@
+// Initialize cache with increased maxKeys limit FIRST (before anything else)
+const cache = require('./core/cache-config');
+
 const path = require("path");
 const fs = require("fs");
 if (fs.existsSync("./config.env")) {
